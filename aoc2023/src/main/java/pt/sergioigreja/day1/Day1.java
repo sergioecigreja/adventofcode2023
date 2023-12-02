@@ -13,11 +13,6 @@ public class Day1 {
     public Day1() {
         input = new File(
                 "/Users/sergioigreja/Projetos/adventofcode2023/aoc2023/src/main/java/pt/sergioigreja/day1/input");
-        if (input.exists()) {
-            System.out.println("Exists");
-        } else {
-            System.out.println("Doesnt exist");
-        }
     }
 
     public int sumAllCalibrationValuesPart2() {
@@ -91,7 +86,7 @@ public class Day1 {
             scanner.close();
             return result;
         } catch (FileNotFoundException e) {
-            return -1;
+            return -10;
         }
     }
 

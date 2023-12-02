@@ -38,26 +38,4 @@ public class Trie {
     public TrieNode getRoot() {
         return this.root;
     }
-
-    public int search(String word) {
-        HashMap<Character, TrieNode> children = root.getChildren();
-
-        TrieNode node = null;
-        for (int i = 0; i < word.length(); i++) {
-            char c = word.charAt(i);
-            if (children.containsKey(c)) {
-                node = children.get(c);
-                children = node.getChildren();
-            } else {
-                node = null;
-                break;
-            }
-        }
-
-        if (node != null) {
-            return node.isLeaf();
-        }
-        return -1;
-    }
-
 }
