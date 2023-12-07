@@ -1,6 +1,5 @@
 package pt.sergioigreja;
 
-import pt.sergioigreja.day5.Day5;
 import pt.sergioigreja.day6.Day6;
 
 public class Application {
